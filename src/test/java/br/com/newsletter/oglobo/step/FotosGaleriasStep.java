@@ -3,6 +3,8 @@ package br.com.newsletter.oglobo.step;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,8 +15,8 @@ import br.com.newsletter.oglobo.pages.FotosGaleriasPage;
 import br.com.newsletter.oglobo.urls.Urls;
 import br.com.newsletter.oglobo.utils.Browsers;
 import br.com.newsletter.oglobo.utils.SeleniumRobot;
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
@@ -24,19 +26,25 @@ public class FotosGaleriasStep {
 	private WebDriver driver;
 	private FotosGaleriasPage fotoGalerias;
 	private int fotos;
+	
+	@Before
+	public void initTest() throws IOException {
+		driver = DriverFactory.iniDriver(Browsers.Chrome);
+		driver.get(Urls.FOTOGALERIASMOBILE);
+		this.fotoGalerias = new FotosGaleriasPage(driver);
+	}
 
 	@Dado("^que eu estiver na fotogalerias$")
-	public void queEuEstiverNaFotogalerias() throws Throwable {
-		driver = DriverFactory.iniDriver(Browsers.Chrome);
-		this.fotoGalerias = new FotosGaleriasPage(driver);
-		driver.get(Urls.FOTOGALERIASMOBILE);
+	public void queEuEstiverNaFotogalerias() {
 		SeleniumRobot.implicitlyWait(fotoGalerias.getPopUp());
 		fotoGalerias.getOpcaoNao().click();
+		assertTrue(driver.getCurrentUrl().equals(Urls.FOTOGALERIASMOBILE));
 	}
 
 	@Quando("^eu ir ate a secao recomendadas$")
 	public void euIrAteASecaoRecomendadas() throws Throwable {
 		SeleniumRobot.scroll(500);
+		SeleniumRobot.explicitWait(fotoGalerias.getGaleriaFotos().get(0));
 		this.fotoGalerias.getGaleriaFotos().forEach(titule -> {
 			WebElement texto = titule.findElement(By.cssSelector(".title"));
 			assertTrue("RECOMENDADAS".equals(texto.getText()));
@@ -78,6 +86,7 @@ public class FotosGaleriasStep {
 	@Quando("^eu ir ate a secao mais vistas$")
 	public void euIrAteASecaoMaisVistas() throws Throwable {
 		SeleniumRobot.scroll(900);
+		SeleniumRobot.explicitWait(fotoGalerias.getFotosPopular().get(0));
 		this.fotoGalerias.getGaleriaFotos().forEach(titulo -> {
 			WebElement texto = titulo.findElement(By.cssSelector(".popular .title"));
 			assertTrue("MAIS VISTAS".equals(texto.getText()));
@@ -87,6 +96,7 @@ public class FotosGaleriasStep {
 	@Quando("^eu ir ate a secao ultimas de$")
 	public void euIrAteASecaoUltimasDe() throws Throwable {
 		SeleniumRobot.scroll(1500);
+		SeleniumRobot.explicitWait(fotoGalerias.getUltimasDe().get(0));
 		this.fotoGalerias.getUltimasDe().forEach(titulo -> {
 			WebElement texto = titulo.findElement(By.cssSelector("#lastFrom .title"));
 			assertTrue("ULTIMAS DE".equals(texto.getText()));
@@ -95,18 +105,19 @@ public class FotosGaleriasStep {
 
 	@Quando("^selecionar uma \"([^\"]*)\"$")
 	public void selecionarUma(String opcao) throws Throwable {
+
 		Select selecionar = new Select(driver.findElement(By.id(fotoGalerias.getEditoras().getAttribute("id"))));
 		selecionar.selectByVisibleText(opcao);
 	}
 
 	@Entao("^devo visualizar (\\d+) fotos por titulo$")
 	public void devoVisualizarFotosPorTitulo(int quantidadeFotos) throws Throwable {
+		SeleniumRobot.explicitWait(fotoGalerias.getCaroseulFotosUltimade());
 		this.fotoGalerias.getListaEdioras().forEach(editoras -> {
 			for (int i = 1; i <= quantidadeFotos; i++) {
 				WebElement editora = editoras
 						.findElement(By.cssSelector("#listaConteudosMobi li:nth-child(" + i + ") > a > img"));
 				assertNotNull(editora.getAttribute("src"));
-				System.out.println(editora.getAttribute("src"));
 				fotos += 1;
 			}
 		});

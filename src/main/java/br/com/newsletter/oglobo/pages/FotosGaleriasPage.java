@@ -10,6 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class FotosGaleriasPage {
 	
+	@FindBy(className = "carousel")
+	private WebElement caroseulFotosUltimade;
+	
 	@FindBy(id = "normal-popover")
 	private WebElement popUp;
 	
@@ -68,6 +71,10 @@ public class FotosGaleriasPage {
 
 	public List<WebElement> getListaEdioras() {
 		return listaEdioras;
+	}
+
+	public WebElement getCaroseulFotosUltimade() {
+		return caroseulFotosUltimade;
 	}
 
 }
