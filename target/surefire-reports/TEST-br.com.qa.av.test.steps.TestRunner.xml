@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="62" failures="20" name="br.com.qa.av.test.steps.TestRunner" time="0.023" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/yamanuser/Projects/eclipse-workspace/avenue-qa-test/ACTest"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/yamanuser/Projects/eclipse-workspace/avenue-qa-test/ACTest"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/fl/ghlxsmxx7bq4qc98kbzjbymc0000gp/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/yamanuser/Documents/development/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/yamanuser/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/yamanuser/Documents/development/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="library.jansi.path" value="/Users/yamanuser/Documents/development/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/yamanuser"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="yamanuser"/>
+    <property name="java.class.path" value="/Users/yamanuser/Documents/development/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="/Users/yamanuser/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/yamanuser/Documents/development/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Scenario: user signin website" name="Given that the user is on Home Page" time="0.003"/>
+  <testcase classname="Scenario: user signin website" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="Scenario: user signin website" name="When click My Tasks link on the navbar" time="0"/>
+  <testcase classname="Scenario: user signin website" name="Then I will see the message &quot;Hey John, this is your todo list for today&quot;" time="0.005">
+    <failure message="expected:&lt;[Hey John, this is your todo list for today]&gt; but was:&lt;[Ronaldo_Silva&apos;s ToDo List]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Hey John, this is your todo list for today]&gt; but was:&lt;[Ronaldo_Silva&apos;s ToDo List]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at br.com.qa.av.test.steps.LoginStep.iWillSeeTheMessage(LoginStep.java:71)
+	at ✽.Then I will see the message &quot;Hey John, this is your todo list for today&quot;(features/login.feature:11)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: user signin website" name="Scenario: user signin website" time="0.006">
+    <failure message="expected:&lt;[Hey John, this is your todo list for today]&gt; but was:&lt;[Ronaldo_Silva&apos;s ToDo List]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Hey John, this is your todo list for today]&gt; but was:&lt;[Ronaldo_Silva&apos;s ToDo List]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at br.com.qa.av.test.steps.LoginStep.iWillSeeTheMessage(LoginStep.java:71)
+	at ✽.Then I will see the message &quot;Hey John, this is your todo list for today&quot;(features/login.feature:11)
+</failure>
+  </testcase>
+  <testcase classname="| 0 |" name="Given that the user is on Home Page" time="0"/>
+  <testcase classname="| 0 |" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="| 0 |" name="When I create new task" time="0"/>
+  <testcase classname="| 0 |" name="And I click manage subtasks" time="0"/>
+  <testcase classname="| 0 |" name="And type a new subtask more than 0 characteres" time="0"/>
+  <testcase classname="| 0 |" name="Then the system should not create subtask" time="0">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:13)
+</failure>
+  </testcase>
+  <testcase classname="| 0 |" name="| 0 |" time="0.001">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:13)
+</failure>
+  </testcase>
+  <testcase classname="| 254 |" name="Given that the user is on Home Page" time="0"/>
+  <testcase classname="| 254 |" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="| 254 |" name="When I create new task" time="0"/>
+  <testcase classname="| 254 |" name="And I click manage subtasks" time="0"/>
+  <testcase classname="| 254 |" name="And type a new subtask more than 254 characteres" time="0"/>
+  <testcase classname="| 254 |" name="Then the system should not create subtask" time="0.001">
+    <failure message="expected null, but was:&lt;vdgyxvxucdfvedvfglecfbignullguwnwhrfsrpgxgnyincyszdeazcksncimvahvdaamrwqdyfliyqijgjxutqzrrjpgijrkdflwcuzxrsirnehtmrsharunpanvqjpyidzockkiscapzkvvkrmpnqpkygrxdbhlclujaaweqjycddzkcpqskfmapbzqbtwxlrbmfiiprtssfrzwrtsyofyxeokvipmtiponvjoqnjkaitbtbjztigpoxnhrt&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;vdgyxvxucdfvedvfglecfbignullguwnwhrfsrpgxgnyincyszdeazcksncimvahvdaamrwqdyfliyqijgjxutqzrrjpgijrkdflwcuzxrsirnehtmrsharunpanvqjpyidzockkiscapzkvvkrmpnqpkygrxdbhlclujaaweqjycddzkcpqskfmapbzqbtwxlrbmfiiprtssfrzwrtsyofyxeokvipmtiponvjoqnjkaitbtbjztigpoxnhrt&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:13)
+</failure>
+  </testcase>
+  <testcase classname="| 254 |" name="| 254 |" time="0.001">
+    <failure message="expected null, but was:&lt;vdgyxvxucdfvedvfglecfbignullguwnwhrfsrpgxgnyincyszdeazcksncimvahvdaamrwqdyfliyqijgjxutqzrrjpgijrkdflwcuzxrsirnehtmrsharunpanvqjpyidzockkiscapzkvvkrmpnqpkygrxdbhlclujaaweqjycddzkcpqskfmapbzqbtwxlrbmfiiprtssfrzwrtsyofyxeokvipmtiponvjoqnjkaitbtbjztigpoxnhrt&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;vdgyxvxucdfvedvfglecfbignullguwnwhrfsrpgxgnyincyszdeazcksncimvahvdaamrwqdyfliyqijgjxutqzrrjpgijrkdflwcuzxrsirnehtmrsharunpanvqjpyidzockkiscapzkvvkrmpnqpkygrxdbhlclujaaweqjycddzkcpqskfmapbzqbtwxlrbmfiiprtssfrzwrtsyofyxeokvipmtiponvjoqnjkaitbtbjztigpoxnhrt&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:13)
+</failure>
+  </testcase>
+  <testcase classname="| &quot;00000000&quot; |" name="Given that the user is on Home Page" time="0"/>
+  <testcase classname="| &quot;00000000&quot; |" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="| &quot;00000000&quot; |" name="When I create new task" time="0"/>
+  <testcase classname="| &quot;00000000&quot; |" name="And I click manage subtasks" time="0"/>
+  <testcase classname="| &quot;00000000&quot; |" name="And I type due date &quot;00000000&quot;" time="0"/>
+  <testcase classname="| &quot;00000000&quot; |" name="Then the system should not create subtask" time="0">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+</failure>
+  </testcase>
+  <testcase classname="| &quot;00000000&quot; |" name="| &quot;00000000&quot; |" time="0.001">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+</failure>
+  </testcase>
+  <testcase classname="| &quot;20180920&quot; |" name="Given that the user is on Home Page" time="0"/>
+  <testcase classname="| &quot;20180920&quot; |" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="| &quot;20180920&quot; |" name="When I create new task" time="0"/>
+  <testcase classname="| &quot;20180920&quot; |" name="And I click manage subtasks" time="0"/>
+  <testcase classname="| &quot;20180920&quot; |" name="And I type due date &quot;20180920&quot;" time="0"/>
+  <testcase classname="| &quot;20180920&quot; |" name="Then the system should not create subtask" time="0">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+</failure>
+  </testcase>
+  <testcase classname="| &quot;20180920&quot; |" name="| &quot;20180920&quot; |" time="0">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+</failure>
+  </testcase>
+  <testcase classname="| &quot;qwerthgf&quot; |" name="Given that the user is on Home Page" time="0"/>
+  <testcase classname="| &quot;qwerthgf&quot; |" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="| &quot;qwerthgf&quot; |" name="When I create new task" time="0"/>
+  <testcase classname="| &quot;qwerthgf&quot; |" name="And I click manage subtasks" time="0"/>
+  <testcase classname="| &quot;qwerthgf&quot; |" name="And I type due date &quot;qwerthgf&quot;" time="0"/>
+  <testcase classname="| &quot;qwerthgf&quot; |" name="Then the system should not create subtask" time="0.001">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+</failure>
+  </testcase>
+  <testcase classname="| &quot;qwerthgf&quot; |" name="| &quot;qwerthgf&quot; |" time="0.001">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: required fields" name="Given that the user is on Home Page" time="0"/>
+  <testcase classname="Scenario: required fields" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="Scenario: required fields" name="When I create new task" time="0"/>
+  <testcase classname="Scenario: required fields" name="And I click manage subtasks" time="0"/>
+  <testcase classname="Scenario: required fields" name="And click in addSubTask" time="0"/>
+  <testcase classname="Scenario: required fields" name="Then the system should not create subtask" time="0">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:51)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: required fields" name="Scenario: required fields" time="0">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:51)
+</failure>
+  </testcase>
+  <testcase classname="| 0 |" name="Given that the user is on Home Page" time="0"/>
+  <testcase classname="| 0 |" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="| 0 |" name="When I create the task with 0 character" time="0"/>
+  <testcase classname="| 0 |" name="Then the system should not create task" time="0.001">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+</failure>
+  </testcase>
+  <testcase classname="| 0 |" name="| 0 |" time="0.001">
+    <failure message="expected null, but was:&lt;empty&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;empty&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+</failure>
+  </testcase>
+  <testcase classname="| 2 |" name="Given that the user is on Home Page" time="0"/>
+  <testcase classname="| 2 |" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="| 2 |" name="When I create the task with 2 character" time="0"/>
+  <testcase classname="| 2 |" name="Then the system should not create task" time="0">
+    <failure message="expected null, but was:&lt;cq&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;cq&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+</failure>
+  </testcase>
+  <testcase classname="| 2 |" name="| 2 |" time="0">
+    <failure message="expected null, but was:&lt;cq&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;cq&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+</failure>
+  </testcase>
+  <testcase classname="| 252 |" name="Given that the user is on Home Page" time="0.001"/>
+  <testcase classname="| 252 |" name="And I try Signin on website with parameter below" time="0"/>
+  <testcase classname="| 252 |" name="When I create the task with 252 character" time="0"/>
+  <testcase classname="| 252 |" name="Then the system should not create task" time="0">
+    <failure message="expected null, but was:&lt;otdscixaodnibxiguferoufvidaoiwzhifodowuuirqyqxblagagelxrfonskfbzdskaoltxttcafcdxabtwzrefhlxinyvplyatyrkjnnujorsoxwisiqantdlfzavgljqnqfoendxfwijypyzpknxvicxywogaacbozibgbdgrloisriakkhnhcerkfsktowcsqegdfzjnokjkcorwmecpeukgkuzghllmxxlugjmbibojfuqudepwgjxb&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;otdscixaodnibxiguferoufvidaoiwzhifodowuuirqyqxblagagelxrfonskfbzdskaoltxttcafcdxabtwzrefhlxinyvplyatyrkjnnujorsoxwisiqantdlfzavgljqnqfoendxfwijypyzpknxvicxywogaacbozibgbdgrloisriakkhnhcerkfsktowcsqegdfzjnokjkcorwmecpeukgkuzghllmxxlugjmbibojfuqudepwgjxb&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+</failure>
+  </testcase>
+  <testcase classname="| 252 |" name="| 252 |" time="0">
+    <failure message="expected null, but was:&lt;otdscixaodnibxiguferoufvidaoiwzhifodowuuirqyqxblagagelxrfonskfbzdskaoltxttcafcdxabtwzrefhlxinyvplyatyrkjnnujorsoxwisiqantdlfzavgljqnqfoendxfwijypyzpknxvicxywogaacbozibgbdgrloisriakkhnhcerkfsktowcsqegdfzjnokjkcorwmecpeukgkuzghllmxxlugjmbibojfuqudepwgjxb&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;otdscixaodnibxiguferoufvidaoiwzhifodowuuirqyqxblagagelxrfonskfbzdskaoltxttcafcdxabtwzrefhlxinyvplyatyrkjnnujorsoxwisiqantdlfzavgljqnqfoendxfwijypyzpknxvicxywogaacbozibgbdgrloisriakkhnhcerkfsktowcsqegdfzjnokjkcorwmecpeukgkuzghllmxxlugjmbibojfuqudepwgjxb&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+</failure>
+  </testcase>
+</testsuite>

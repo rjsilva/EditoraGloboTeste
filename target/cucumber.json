@@ -1,0 +1,91 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "visualizar fotos recomendadas",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-recomendadas",
+        "after": [
+          {
+            "result": {
+              "duration": 106646219,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 8620115008,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 142659646,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "eu ir ate a secao recomendadas",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoRecomendadas()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 7504903301,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "devo visualizar 6 fotos na secao \"recomendadas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 16
+                },
+                {
+                  "val": "recomendadas",
+                  "offset": 34
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosNaSecao(int,String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Visualizar Fotos na Fotogalerias",
+    "description": "",
+    "id": "visualizar-fotos-na-fotogalerias",
+    "keyword": "Funcionalidade",
+    "uri": "features/fotogalerias.feature"
+  }
+]

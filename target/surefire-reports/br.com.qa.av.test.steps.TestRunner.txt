@@ -1,0 +1,180 @@
+-------------------------------------------------------------------------------
+Test set: br.com.qa.av.test.steps.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 62, Failures: 20, Errors: 0, Skipped: 0, Time elapsed: 77.233 sec <<< FAILURE!
+Then I will see the message "Hey John, this is your todo list for today"(Scenario: user signin website)  Time elapsed: 0.005 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Hey John, this is your todo list for today]> but was:<[Ronaldo_Silva's ToDo List]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at br.com.qa.av.test.steps.LoginStep.iWillSeeTheMessage(LoginStep.java:71)
+	at ✽.Then I will see the message "Hey John, this is your todo list for today"(features/login.feature:11)
+
+Scenario: user signin website  Time elapsed: 0.006 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Hey John, this is your todo list for today]> but was:<[Ronaldo_Silva's ToDo List]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at br.com.qa.av.test.steps.LoginStep.iWillSeeTheMessage(LoginStep.java:71)
+	at ✽.Then I will see the message "Hey John, this is your todo list for today"(features/login.feature:11)
+
+Then the system should not create subtask(| 0 |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:13)
+
+| 0 |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:13)
+
+Then the system should not create subtask(| 254 |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<vdgyxvxucdfvedvfglecfbignullguwnwhrfsrpgxgnyincyszdeazcksncimvahvdaamrwqdyfliyqijgjxutqzrrjpgijrkdflwcuzxrsirnehtmrsharunpanvqjpyidzockkiscapzkvvkrmpnqpkygrxdbhlclujaaweqjycddzkcpqskfmapbzqbtwxlrbmfiiprtssfrzwrtsyofyxeokvipmtiponvjoqnjkaitbtbjztigpoxnhrt>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:13)
+
+| 254 |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<vdgyxvxucdfvedvfglecfbignullguwnwhrfsrpgxgnyincyszdeazcksncimvahvdaamrwqdyfliyqijgjxutqzrrjpgijrkdflwcuzxrsirnehtmrsharunpanvqjpyidzockkiscapzkvvkrmpnqpkygrxdbhlclujaaweqjycddzkcpqskfmapbzqbtwxlrbmfiiprtssfrzwrtsyofyxeokvipmtiponvjoqnjkaitbtbjztigpoxnhrt>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:13)
+
+Then the system should not create subtask(| "00000000" |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+
+| "00000000" |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+
+Then the system should not create subtask(| "20180920" |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+
+| "20180920" |  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+
+Then the system should not create subtask(| "qwerthgf" |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+
+| "qwerthgf" |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:32)
+
+Then the system should not create subtask(Scenario: required fields)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:51)
+
+Scenario: required fields  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.SubtaskStep.theSystemShouldNotCreateSubtask(SubtaskStep.java:78)
+	at ✽.Then the system should not create subtask(features/subtask.feature:51)
+
+Then the system should not create task(| 0 |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+
+| 0 |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<empty>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+
+Then the system should not create task(| 2 |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<cq>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+
+| 2 |  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<cq>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+
+Then the system should not create task(| 252 |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<otdscixaodnibxiguferoufvidaoiwzhifodowuuirqyqxblagagelxrfonskfbzdskaoltxttcafcdxabtwzrefhlxinyvplyatyrkjnnujorsoxwisiqantdlfzavgljqnqfoendxfwijypyzpknxvicxywogaacbozibgbdgrloisriakkhnhcerkfsktowcsqegdfzjnokjkcorwmecpeukgkuzghllmxxlugjmbibojfuqudepwgjxb>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+
+| 252 |  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<otdscixaodnibxiguferoufvidaoiwzhifodowuuirqyqxblagagelxrfonskfbzdskaoltxttcafcdxabtwzrefhlxinyvplyatyrkjnnujorsoxwisiqantdlfzavgljqnqfoendxfwijypyzpknxvicxywogaacbozibgbdgrloisriakkhnhcerkfsktowcsqegdfzjnokjkcorwmecpeukgkuzghllmxxlugjmbibojfuqudepwgjxb>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at br.com.qa.av.test.steps.TaskStep.theSystemShouldNotCreateTask(TaskStep.java:51)
+	at ✽.Then the system should not create task(features/task.feature:11)
+
