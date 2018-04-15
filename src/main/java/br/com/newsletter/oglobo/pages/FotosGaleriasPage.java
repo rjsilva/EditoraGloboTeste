@@ -23,10 +23,10 @@ public class FotosGaleriasPage {
 	private List<WebElement> fotosPopular;
 	
 	@FindBy(id = "selectEditorias")
-	private WebElement publishersList;
+	private WebElement editoras;
 	
 	@FindBy(id = "listaConteudosMobi")
-	private WebElement LastPhotosList;
+	private List<WebElement> listaEdioras;
 	
 	@FindBy(id = "lastFrom")
 	private List<WebElement> ultimasDe;
@@ -46,14 +46,6 @@ public class FotosGaleriasPage {
 		return opcaoNao;
 	}
 
-	public WebElement getPublishersList() {
-		return publishersList;
-	}
-
-	public WebElement getLastPhotosList() {
-		return LastPhotosList;
-	}
-
 	public List<WebElement> getUltimasDe() {
 		return ultimasDe;
 	}
@@ -68,6 +60,14 @@ public class FotosGaleriasPage {
 
 	public WebElement getFotosRecomendadas() {
 		return fotosRecomendadas;
+	}
+
+	public WebElement getEditoras() {
+		return editoras;
+	}
+
+	public List<WebElement> getListaEdioras() {
+		return listaEdioras;
 	}
 
 }

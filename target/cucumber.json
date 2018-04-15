@@ -9,14 +9,14 @@
     "line": 3,
     "elements": [
       {
-        "line": 13,
-        "name": "visualizar fotos mais vistas",
+        "line": 27,
+        "name": "visualizar fotos ultimas de",
         "description": "",
-        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-mais-vistas",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;2",
         "after": [
           {
             "result": {
-              "duration": 125077566,
+              "duration": 146491908,
               "status": "passed"
             },
             "match": {
@@ -25,14 +25,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Cenário",
+        "keyword": "Esquema do Cenario",
         "steps": [
           {
             "result": {
-              "duration": 8062361529,
+              "duration": 8952180045,
               "status": "passed"
             },
-            "line": 14,
+            "line": 20,
             "name": "que eu estiver na fotogalerias",
             "match": {
               "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
@@ -41,42 +41,1273 @@
           },
           {
             "result": {
-              "duration": 5330495505,
+              "duration": 160733574,
               "status": "passed"
             },
-            "line": 15,
-            "name": "eu ir ate a secao mais vistas",
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
             "match": {
-              "location": "FotosGaleriasStep.euIrAteASecaoMaisVistas()"
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 8224080725,
+              "duration": 111642751,
               "status": "passed"
             },
-            "line": 16,
-            "name": "devo visualizar 3 fotos na secao \"mais vistas\"",
+            "line": 22,
+            "name": "selecionar uma \"Todas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Todas",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 82798061958,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
             "match": {
               "arguments": [
                 {
                   "val": "3",
                   "offset": 16
-                },
-                {
-                  "val": "mais vistas",
-                  "offset": 34
                 }
               ],
-              "location": "FotosGaleriasStep.devoVisualizarFotosNaSecao(int,String)"
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "Entao "
           }
         ],
         "tags": [
           {
-            "line": 12,
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 100609870,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8175943669,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 107673194,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 158879335,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Rio\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rio",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 59788753622,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 104089954,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7722113031,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 104427083,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 143352649,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Brasil\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brasil",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 31916797876,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 142393845,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9113756449,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 94739471,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 167101594,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Mundo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mundo",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 7306946046,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 97339065,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21082486123,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 101771948,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 159885112,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Economia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Economia",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 8702464630,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 101769015,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7489673214,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 105334813,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 158457666,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Sociedade\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sociedade",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 18087587997,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 106642090,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8191451937,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 109416500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 131476980,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Tecnologia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tecnologia",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 4289200820,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 145417509,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7382627691,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 95540751,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 128973731,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Ciência\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ciência",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 4646303660,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 96540617,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7766602616,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 124687050,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 119390183,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Saúde\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Saúde",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6323582551,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;11",
+        "after": [
+          {
+            "result": {
+              "duration": 120074738,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7330294524,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 102377502,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 126064725,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Cultura\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cultura",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3816770581,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;12",
+        "after": [
+          {
+            "result": {
+              "duration": 106068882,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8409582170,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 90509248,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 126857817,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Ela\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ela",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 7655046821,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;13",
+        "after": [
+          {
+            "result": {
+              "duration": 98591875,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7989823816,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 82370036,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 126256083,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Esportes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Esportes",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 4073969695,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;14",
+        "after": [
+          {
+            "result": {
+              "duration": 87175280,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7864047517,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 117999140,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 143262307,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"TV\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TV",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 5051990471,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform\u003dMac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027MacBook-Air-de-Yaman-3.local\u0027, ip: \u00272804:18:1812:7f98:719f:bb7a:3c46:13f8\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.12.6\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544337 (8c0344a12e5521..., userDataDir: /var/folders/fl/ghlxsmxx7bq...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: true, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: true, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}\nSession ID: 2c100b6c52f888b6028c2f9ad431a162\n*** Element info: {Using\u003dcss selector, value\u003d#listaConteudosMobi li:nth-child(1) \u003e a \u003e img}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:247)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)\n\tat br.com.newsletter.oglobo.step.FotosGaleriasStep.lambda$5(FotosGaleriasStep.java:108)\n\tat java.util.ArrayList.forEach(ArrayList.java:1249)\n\tat sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\n\tat com.sun.proxy.$Proxy17.forEach(Unknown Source)\n\tat br.com.newsletter.oglobo.step.FotosGaleriasStep.devoVisualizarFotosPorTitulo(FotosGaleriasStep.java:105)\n\tat ✽.Entao devo visualizar 3 fotos por titulo(features/fotogalerias.feature:23)\n",
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Test"
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "visualizar fotos ultimas de",
+        "description": "",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-ultimas-de;;15",
+        "after": [
+          {
+            "result": {
+              "duration": 85876407,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FotosGaleriasStep.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9511710645,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "que eu estiver na fotogalerias",
+            "match": {
+              "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 88845701,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "eu ir ate a secao ultimas de",
+            "match": {
+              "location": "FotosGaleriasStep.euIrAteASecaoUltimasDe()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 127084867,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "selecionar uma \"Boa Viagem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Boa Viagem",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.selecionarUma(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 5025963758,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform\u003dMac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027MacBook-Air-de-Yaman-3.local\u0027, ip: \u00272804:18:1812:7f98:719f:bb7a:3c46:13f8\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.12.6\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544337 (8c0344a12e5521..., userDataDir: /var/folders/fl/ghlxsmxx7bq...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: true, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: true, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}\nSession ID: 0fae9e279b14d62d587796ad92aa0edb\n*** Element info: {Using\u003dcss selector, value\u003d#listaConteudosMobi li:nth-child(1) \u003e a \u003e img}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:247)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)\n\tat br.com.newsletter.oglobo.step.FotosGaleriasStep.lambda$5(FotosGaleriasStep.java:108)\n\tat java.util.ArrayList.forEach(ArrayList.java:1249)\n\tat sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\n\tat com.sun.proxy.$Proxy17.forEach(Unknown Source)\n\tat br.com.newsletter.oglobo.step.FotosGaleriasStep.devoVisualizarFotosPorTitulo(FotosGaleriasStep.java:105)\n\tat ✽.Entao devo visualizar 3 fotos por titulo(features/fotogalerias.feature:23)\n",
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "devo visualizar 3 fotos por titulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 16
+                }
+              ],
+              "location": "FotosGaleriasStep.devoVisualizarFotosPorTitulo(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
             "name": "@Test"
           }
         ]

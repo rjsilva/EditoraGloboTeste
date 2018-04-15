@@ -6,6 +6,7 @@ import static org.junit.Assert.assertTrue;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import br.com.newsletter.oglobo.factory.DriverFactory;
 import br.com.newsletter.oglobo.pages.FotosGaleriasPage;
@@ -77,8 +78,8 @@ public class FotosGaleriasStep {
 	@Quando("^eu ir ate a secao mais vistas$")
 	public void euIrAteASecaoMaisVistas() throws Throwable {
 		SeleniumRobot.scroll(900);
-		this.fotoGalerias.getGaleriaFotos().forEach(titule -> {
-			WebElement texto = titule.findElement(By.cssSelector(".popular .title"));
+		this.fotoGalerias.getGaleriaFotos().forEach(titulo -> {
+			WebElement texto = titulo.findElement(By.cssSelector(".popular .title"));
 			assertTrue("MAIS VISTAS".equals(texto.getText()));
 		});
 	}
@@ -86,18 +87,31 @@ public class FotosGaleriasStep {
 	@Quando("^eu ir ate a secao ultimas de$")
 	public void euIrAteASecaoUltimasDe() throws Throwable {
 		SeleniumRobot.scroll(1500);
+		this.fotoGalerias.getUltimasDe().forEach(titulo -> {
+			WebElement texto = titulo.findElement(By.cssSelector("#lastFrom .title"));
+			assertTrue("ULTIMAS DE".equals(texto.getText()));
+		});
 	}
 
 	@Quando("^selecionar uma \"([^\"]*)\"$")
-	public void selecionarUma(String arg1) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		throw new PendingException();
+	public void selecionarUma(String opcao) throws Throwable {
+		Select selecionar = new Select(driver.findElement(By.id(fotoGalerias.getEditoras().getAttribute("id"))));
+		selecionar.selectByVisibleText(opcao);
 	}
 
 	@Entao("^devo visualizar (\\d+) fotos por titulo$")
-	public void devoVisualizarFotosPorTitulo(int arg1) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		throw new PendingException();
+	public void devoVisualizarFotosPorTitulo(int quantidadeFotos) throws Throwable {
+		this.fotoGalerias.getListaEdioras().forEach(editoras -> {
+			for (int i = 1; i <= quantidadeFotos; i++) {
+				WebElement editora = editoras
+						.findElement(By.cssSelector("#listaConteudosMobi li:nth-child(" + i + ") > a > img"));
+				assertNotNull(editora.getAttribute("src"));
+				System.out.println(editora.getAttribute("src"));
+				fotos += 1;
+			}
+		});
+		
+		assertTrue(fotos == quantidadeFotos);
 	}
 
 	@After

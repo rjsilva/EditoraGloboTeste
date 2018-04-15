@@ -9,13 +9,13 @@ Dado que eu estiver na fotogalerias
 Quando eu ir ate a secao recomendadas
 Entao devo visualizar 6 fotos na secao "recomendadas"
 	
-@Test
+
 Cenário: visualizar fotos mais vistas
 Dado que eu estiver na fotogalerias
 Quando eu ir ate a secao mais vistas
 Entao devo visualizar 3 fotos na secao "mais vistas"
 
-
+@Test
 Esquema do Cenario: visualizar fotos ultimas de
 Dado que eu estiver na fotogalerias
 Quando eu ir ate a secao ultimas de
