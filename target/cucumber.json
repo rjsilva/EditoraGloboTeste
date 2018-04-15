@@ -9,14 +9,14 @@
     "line": 3,
     "elements": [
       {
-        "line": 7,
-        "name": "visualizar fotos recomendadas",
+        "line": 13,
+        "name": "visualizar fotos mais vistas",
         "description": "",
-        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-recomendadas",
+        "id": "visualizar-fotos-na-fotogalerias;visualizar-fotos-mais-vistas",
         "after": [
           {
             "result": {
-              "duration": 106646219,
+              "duration": 125077566,
               "status": "passed"
             },
             "match": {
@@ -29,10 +29,10 @@
         "steps": [
           {
             "result": {
-              "duration": 8620115008,
+              "duration": 8062361529,
               "status": "passed"
             },
-            "line": 8,
+            "line": 14,
             "name": "que eu estiver na fotogalerias",
             "match": {
               "location": "FotosGaleriasStep.queEuEstiverNaFotogalerias()"
@@ -41,31 +41,31 @@
           },
           {
             "result": {
-              "duration": 142659646,
+              "duration": 5330495505,
               "status": "passed"
             },
-            "line": 9,
-            "name": "eu ir ate a secao recomendadas",
+            "line": 15,
+            "name": "eu ir ate a secao mais vistas",
             "match": {
-              "location": "FotosGaleriasStep.euIrAteASecaoRecomendadas()"
+              "location": "FotosGaleriasStep.euIrAteASecaoMaisVistas()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 7504903301,
+              "duration": 8224080725,
               "status": "passed"
             },
-            "line": 10,
-            "name": "devo visualizar 6 fotos na secao \"recomendadas\"",
+            "line": 16,
+            "name": "devo visualizar 3 fotos na secao \"mais vistas\"",
             "match": {
               "arguments": [
                 {
-                  "val": "6",
+                  "val": "3",
                   "offset": 16
                 },
                 {
-                  "val": "recomendadas",
+                  "val": "mais vistas",
                   "offset": 34
                 }
               ],
@@ -76,7 +76,7 @@
         ],
         "tags": [
           {
-            "line": 6,
+            "line": 12,
             "name": "@Test"
           }
         ]

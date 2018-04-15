@@ -47,8 +47,9 @@ public class FotosGaleriasStep {
 		switch (secao) {
 		case "recomendadas":
 			this.fotoGalerias.getGaleriaFotos().forEach(imagens -> {
-				for(int i = 1 ; i <= quantidadeFotos ; i ++ ) {
-					WebElement img = imagens.findElement(By.cssSelector(".recommended li:nth-child("+i+") > a > img"));
+				for (int i = 1; i <= quantidadeFotos; i++) {
+					WebElement img = imagens
+							.findElement(By.cssSelector(".recommended li:nth-child(" + i + ") > a > img"));
 					assertNotNull(img.getAttribute("src"));
 					fotos += 1;
 				}
@@ -56,17 +57,30 @@ public class FotosGaleriasStep {
 			});
 			break;
 		case "mais vistas":
+			this.fotoGalerias.getGaleriaFotos().forEach(imagens -> {
+				for (int i = 1; i <= quantidadeFotos; i++) {
+					WebElement img = imagens
+							.findElement(By.cssSelector(".recommended li:nth-child(" + i + ") > a > img"));
+					assertNotNull(img.getAttribute("src"));
+					fotos += 1;
+				}
+
+			});
 			break;
 		default:
 			break;
 		}
-		
+
 		assertTrue(fotos == quantidadeFotos);
 	}
 
 	@Quando("^eu ir ate a secao mais vistas$")
 	public void euIrAteASecaoMaisVistas() throws Throwable {
 		SeleniumRobot.scroll(900);
+		this.fotoGalerias.getGaleriaFotos().forEach(titule -> {
+			WebElement texto = titule.findElement(By.cssSelector(".popular .title"));
+			assertTrue("MAIS VISTAS".equals(texto.getText()));
+		});
 	}
 
 	@Quando("^eu ir ate a secao ultimas de$")

@@ -3,13 +3,13 @@
 Funcionalidade: Visualizar Fotos na Fotogalerias
 
 
-@Test
+
 Cenário: visualizar fotos recomendadas
 Dado que eu estiver na fotogalerias
 Quando eu ir ate a secao recomendadas
 Entao devo visualizar 6 fotos na secao "recomendadas"
 	
-
+@Test
 Cenário: visualizar fotos mais vistas
 Dado que eu estiver na fotogalerias
 Quando eu ir ate a secao mais vistas
